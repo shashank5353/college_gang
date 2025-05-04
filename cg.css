@@ -293,6 +293,10 @@ a{
   font-size: 3.5vh;
   color: #fff;
 }
+.logla_link{
+  background-image: url('logla_link_icon.png');
+  background-size: cover;
+}
 .contact_us_dis{
   margin-top: 1vh;
   width: 100%;
