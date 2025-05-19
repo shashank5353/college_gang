@@ -5,9 +5,9 @@ const f_l=["Shashank","Kumar","Jeevan",
      "Naveen"];
 const f_info=[
   ["04/09/2006","18/08/2006","21/04/2006",
-  "30/08/2006","13/08/2006","18/03/2007",
+  "30/08/2006","13/07/2006","18/03/2007",
   "29/01/2006","08/07/2006","18/10/2006",
-  "00/00/2006"]
+  "01/01/2005"]
   ,["Shashank's tag","Kumar's tag","Jeevan's tag",
   "Ronith's tag","Srihan's tag","Suhas's tag",
   "Sai kiran's tag","Arjun's tag","Sidhartha's tag",
@@ -17,18 +17,18 @@ const f_info=[
   "22264-cs-039","22264-cs-055","22264-cs-019",
   "22264-cs-052"]
   ,["+91 9948329185","+91 6281268102","+91 93460 28245",
-     "+91 9618485563","+91 9963307582","+91 7997828830",
+     "+91 9618485563","+91 9121318152","+91 7997828830",
      "+91 8465944439","+91 7893065041","+91 9618634031",
      "+91 9347069436"]
   ,["Shashank@gmail.com","adepukumaraswamy22@gmail.com","Jeevan@gmail.com",
-   "ronith4848@gmail.com","Srihan@gmail.com","suhas123anand@gmail.com",
+   "ronith4848@gmail.com","sankepallysrihan@gmail.com","suhas123anand@gmail.com",
     "saikiranns63@gmail.com","Arjun@gmail.com","Sidhartha@gmail.com",
     "Naveen@gmail.com"]
   ,["Koyyalagudem, Choutuppal.",
     "Koyyalagudem, Choutuppal.",
     "Dilshuknagar, Hydrabad.",
     "Ramnagar, Hydrabad.",
-    "Dilshuknagar, Hydrabad.",
+    "Mudimyal (Chevella)",
     "Padmarao Nagar, Secunderabad",
     "Karmanghat, LB nagar.",
     "Dilshuknagar, Hydrabad.",
@@ -38,23 +38,33 @@ const f_info=[
   "https://maps.app.goo.gl/yXdg28PyGBSjSHbw5?g_st=aw",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/mV7i1PwTWaaR6Vfv5",
-  "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
+  "https://maps.app.goo.gl/mQCrEJMtPkgcfp739",
   "https://maps.app.goo.gl/jkJbgWDiuivWZHaz8?g_st=aw",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437"]];
 const f_p_num=[
-  [22,30,19,35,17,20,18,16,9,25],
-  [37,36,11,12,8],
-  [21,10],
-  [31,33,32,13],
-  [],
-  [34],
-  [1,27,23,28,29,7,6,5],
-  [15,4,3,2],
-  [26,24,14],
-  [38]
+ //shashank
+  [[22,30,19,35,17,20,18,16,9,25,41,43],[2,3,4,13,14,16,17,18,22,23,24,25,26,27,28,29], [1,2,3,4,5,6,7,9,10,11],[1,2,3,4,5,6,7,8,9,10,11,12,13,15]],
+   //Kumar
+  [[37,36,11,12,8],[1,3,5,6,7,8,9,15],[4,5,6,7,11],[2,4,5,6,7,8,9,10,11,12,13,15]],
+   //Jeevan
+  [[21,10],[2,6,16,17,21,29],[1,2,3,8],[3,4,5,6,7,8,9,10,11,12,13,14,15]],
+   //Ronith
+  [[31,33,32,13,44,45],[1,10,11,12,19,24,26],[1,2,3,8,9,11],[2,4,5,6,7,8,9,10,11,12,13,14,15]],
+   //Srihan
+  [[39,40,46,47],[11,23,27],[6,7,10],[6,11,13,15]],
+  //Suhas
+  [[34],[4,5,13],[8,9,10],[1,6,7,9,11,12,13,14,15]],
+   //Sai kiran
+  [[1,27,23,28,29,7,6,5,48],[7,19,20,21,22],[],[6,7,9,13,15]],
+   //Arjun 
+  [[15,4,3,2],[8,9,12,14,15],[],[1,2,3,6,7,9,15]],
+   //Sidhartha
+  [[26,24,14],[18,20],[4,5],[3,6,13,14,15]],
+   //Naveen
+  [[38,42],[10,28,25],[],[1,2,3,6,7,9,15]]
   ];
 const f_w_l = [
   [ // Wishes for Shashank
@@ -358,15 +368,20 @@ info_space_box_c.append(info_space_box_c_open);
   }
   }
 info_box_creation();
-
+const scrollToTop=()=>{
+    window.scrollTo({
+      top: 0,
+     behavior: 'auto'
+    });
+  }
 function friend_profile_page_creation(ii){
-  const scrollToTop=()=>{
+const scrollToTopp=()=>{
     window.scrollTo({
       top: 0,
      behavior: 'smooth'
     });
-  }
- scrollToTop();
+  }  
+ scrollToTopp();
   const index=ii;
   const friend_profile_page=document.querySelector(" .friend_profile_page");
   const home_page=document.querySelector(" .home_page");
@@ -415,24 +430,67 @@ function friend_profile_page_creation(ii){
   const f_p_photo_galary_box=document.querySelector(".f_p_photo_galary_box");
   f_p_photo_galary_box.innerHTML="";
   
-  
+  //&&
+  let uu=0;
   for(let i=0;i<f_p_num[index].length;i++){
+  for(let j=0;j<f_p_num[index][i].length;j++){
     const f_p_photo_g=document.createElement("div");
     f_p_photo_g.classList.add(`f_p_photo_g`);
     
     const f_p_photo_g_img=document.createElement("div");
     f_p_photo_g_img.classList.add(`f_p_photo_g_img`);
-    f_p_photo_g_img.style.backgroundImage=` url('f_a_s1/s1_${f_p_num[index][i]}.jpg')`
+    f_p_photo_g_img.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
+    
   // console.log(index,i,f_p_num[index][i]);
+ const uu_c=uu;
    f_p_photo_g_img.addEventListener("click",()=>{
      friend_profile_page.style.display="none";
-     friend_profile_photos_page_creation(index);
+     friend_profile_photos_page_creation(index,uu_c);
+     console.log(i,j,uu_c);
    })
     f_p_photo_g.append(f_p_photo_g_img);
     f_p_photo_galary_box.append(f_p_photo_g);
+    uu++;
   }
- 
+  }
+ const f_p_photo_galary_box_open_space=document.querySelector(".f_p_photo_galary_box_open_space");
+  if(uu<9){
+    f_p_photo_galary_box_open_space.style.display="none";
+  }
+  else{
+    f_p_photo_galary_box_open_space.style.display="flex";
+const f_p_photo_g=document.querySelectorAll(".f_p_photo_g");
+  const f_p_photo_galary_box_open=document.querySelector(".f_p_photo_galary_box_open");
+   f_p_photo_galary_box_open.querySelector('i').style.rotate="0deg";
+   for(let i=9;i<uu;i++){
+     f_p_photo_g[i].classList.add("hidden");
+      f_p_photo_g[i].style.display="none";
+   }
+   f_p_photo_galary_box_open.addEventListener("click",()=>{
+     const isHidden = f_p_photo_g[9].classList.contains("hidden");
+     if(isHidden){
+    for(let i=9;i<uu;i++){
+      f_p_photo_g[i].style.display="flex";
+      setTimeout(()=>{
+    f_p_photo_g[i].classList.remove("hidden");
+      },10)
+    }
+    f_p_photo_galary_box_open.querySelector('i').style.rotate="180deg";
+    }
+    else{
+    for(let i=9;i<uu;i++){
+     f_p_photo_g[i].classList.add("hidden");
+     setTimeout(()=>{
+     f_p_photo_g[i].style.display="none";
+     },40)
+    }
+    f_p_photo_galary_box_open.querySelector('i').style.rotate="0deg";
+    }
+   })
+  }
+  
   const f_p_photo_review_list=document.querySelector(".f_p_photo_review_list");
+  
   f_p_photo_review_list.innerHTML="";
   let j=0;
   for(let i=0;i<f_w_l.length-1;i++){
@@ -444,8 +502,8 @@ function friend_profile_page_creation(ii){
     
     const f_p_photo_review_l_photo=document.createElement("div");
     f_p_photo_review_l_photo.classList.add(`f_p_photo_review_l_photo`);
-    if(j==index){
-      j++;
+    if(j===index){
+       j = (j + 1) % f_l.length
     }
     f_p_photo_review_l_photo.style.backgroundImage=`url('f_photos/f${j+1}.jpg')`;
    f_p_photo_review_l_head.append(f_p_photo_review_l_photo);
@@ -470,24 +528,54 @@ function friend_profile_page_creation(ii){
     f_p_photo_review_list.append(f_p_photo_review_l);
     j++;
 }
-  
+ 
+ 
+ const f_p_photo_review_l=document.querySelectorAll(".f_p_photo_review_l");
+  const f_p_photo_review_list_open=document.querySelector(".f_p_photo_review_list_open");
+   f_p_photo_review_list_open.querySelector('i').style.rotate="0deg";
+   for(let i=3;i<f_w_l.length-1;i++){
+     f_p_photo_review_l[i].classList.add("hidden");
+      f_p_photo_review_l[i].style.display="none";
+   }
+  f_p_photo_review_list_open.addEventListener("click",()=>{
+    const isHidden = f_p_photo_review_l[3].classList.contains("hidden");
+    if(isHidden){
+    for(let i=3;i<f_w_l.length-1;i++){
+      f_p_photo_review_l[i].style.display="flex";
+      setTimeout(()=>{
+       f_p_photo_review_l[i].classList.remove("hidden");
+      },0)
+    }
+    f_p_photo_review_list_open.querySelector('i').style.rotate="180deg";
+    }
+    else{
+    for(let i=3;i<f_w_l.length-1;i++){
+     f_p_photo_review_l[i].classList.add("hidden");
+     setTimeout(()=>{
+       f_p_photo_review_l[i].style.display="none";
+     },40)
+    }
+    f_p_photo_review_list_open.querySelector('i').style.rotate="0deg";
+    }
+  });
 }
 //friend_profile_page_creation(1);
 
-function friend_profile_photos_page_creation(ii){
+function friend_profile_photos_page_creation(ii,jj){
 const index=ii;
  const friend_profile_photos_page=document.querySelector(".friend_profile_photos_page");
  friend_profile_photos_page.style.display="flex";
  const friend_profile_page=document.querySelector(".friend_profile_page");
   const f_p_p_close_space=document.querySelector(".f_p_p_close_space");
   f_p_p_close_space.addEventListener("click",()=>{
+    scrollToTop();
     friend_profile_photos_page.style.display="none";
     friend_profile_page.style.display="flex";
   });
   const f_p_p_photo_list_space=document.querySelector(".f_p_p_photo_list_space");
   f_p_p_photo_list_space.innerHTML="";
   for(let i=0;i<f_p_num[index].length;i++){
-    
+  for(let j=0;j<f_p_num[index][i].length;j++){
     
     const f_p_p_photo_space=document.createElement("div");
     f_p_p_photo_space.classList.add(`f_p_p_photo_space`);
@@ -509,11 +597,11 @@ const index=ii;
     
     const f_p_p_photo=document.createElement("div");
     f_p_p_photo.classList.add(`f_p_p_photo`);
-    f_p_p_photo.style.backgroundImage=` url('f_a_s1/s1_${f_p_num[index][i]}.jpg')`;
+    f_p_p_photo.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
     
     const f_p_p_p=document.createElement("div");
     f_p_p_p.classList.add(`f_p_p_p`);
-    f_p_p_p.style.backgroundImage=` url('f_a_s1/s1_${f_p_num[index][i]}.jpg')`;
+    f_p_p_p.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
     
     f_p_p_photo.append(f_p_p_p);
     
@@ -531,5 +619,97 @@ const index=ii;
     
     f_p_p_photo_list_space.append(f_p_p_photo_space);
   }
+  }
+const f_p_p_photo_space_v=document.querySelectorAll(".f_p_p_photo_space");
+console.log("jj:", jj);
+console.log("Number of photo spaces:", f_p_p_photo_space_v.length);
+
+setTimeout(()=>{
+  f_p_p_photo_space_v[jj].scrollIntoView({ behavior: "auto",block: "center" });
+},0)
+  
 }
 // friend_profile_photos_page_creation();
+
+function search_page_transport(){
+  const search_page=document.querySelector(".search_page");
+  const home_page=document.querySelector(".home_page");
+  const friend_profile_page=document.querySelector(".friend_profile_page");
+const search_task_icon=document.querySelector(".search_task_icon");
+  search_task_icon.addEventListener("click",()=>{
+    home_page.style.display="none";
+    search_page.style.display="flex";
+  })
+
+const f_p_search_icon=document.querySelector(".f_p_search_icon");
+  f_p_search_icon.addEventListener("click",()=>{
+    friend_profile_page.style.display="none";
+    search_page.style.display="flex";
+  })
+  
+}
+search_page_transport();
+
+  
+function search_page_creation(){
+  const search_page=document.querySelector(".search_page");
+  const home_page=document.querySelector(".home_page");
+  
+  const s_p_close=document.querySelector(".s_p_close");
+  s_p_close.addEventListener("click",()=>{
+    search_page.style.display="none";
+    home_page.style.display="flex";
+  })
+  const search_text=document.querySelector(".search_text");
+  const search_list_space=document.querySelector(".search_list_space");
+  
+  search_text.addEventListener("input",()=>{
+    search_list_space.innerHTML="";
+    const slist=f_l.concat(f_info[2]);
+    let flist=[];
+    let fnlist=[];
+    let fwlist=[];
+    const value=search_text.value;
+    const len=value.length;
+    let y=0;
+    if(len){
+    for(let i=0;i<slist.length;i++){
+      for(let j=0;j<=slist[i].length-len;j++){
+      if(value.toLowerCase()==slist[i].slice(j,j+len).toLowerCase()){
+        flist[y]=slist[i];
+        fnlist[y]=i%f_l.length;
+        fwlist[y]=j;
+        y++;
+        break;
+      }
+      }
+    }
+    }
+    for(let i=0;i<flist.length;i++){
+    const search_list=document.createElement("div");
+    search_list.classList.add("search_list");
+    
+    const search_list_text=document.createElement("div");
+    search_list_text.classList.add("search_list_text");
+    const f=`${flist[i].slice(0,fwlist[i])}`;
+    const m=`${flist[i].slice(fwlist[i],fwlist[i]+len)}`;
+    const e=`${flist[i].slice(fwlist[i]+len,fwlist[i].length)}`
+    search_list_text.innerHTML=`${f}<span class="search_text_highlite">${m}</span>${e}`;
+    search_list.append(search_list_text);
+    
+    const search_list_icon=document.createElement("div");
+    search_list_icon.classList.add("search_list_icon");
+    search_list_icon.innerHTML=`
+      <i class="fa-solid fa-magnifying-glass"></i>
+    `;
+    search_list.append(search_list_icon);
+    
+    search_list.addEventListener("click",()=>{
+      search_page.style.display="none";
+      friend_profile_page_creation(fnlist[i]);
+    })
+    search_list_space.append(search_list);
+    }
+  })
+}
+search_page_creation();
