@@ -2,7 +2,7 @@ console.log("hello wolrd!");
 const f_l=["Shashank","Kumar","Jeevan",
      "Ronith","Srihan","Suhas",
      "Sai kiran","Arjun","Sidhartha",
-     "Naveen"];
+     "Naveen"]; 
 const f_info=[
   ["04/09/2006","18/08/2006","21/04/2006",
   "30/08/2006","13/07/2006","18/03/2007",
@@ -439,7 +439,7 @@ const scrollToTopp=()=>{
     
     const f_p_photo_g_img=document.createElement("div");
     f_p_photo_g_img.classList.add(`f_p_photo_g_img`);
-    f_p_photo_g_img.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
+    f_p_photo_g_img.style.backgroundImage=` url('f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
     
   // console.log(index,i,f_p_num[index][i]);
  const uu_c=uu;
@@ -597,11 +597,11 @@ const index=ii;
     
     const f_p_p_photo=document.createElement("div");
     f_p_p_photo.classList.add(`f_p_p_photo`);
-    f_p_p_photo.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
+    f_p_p_photo.style.backgroundImage=` url('f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
     
     const f_p_p_p=document.createElement("div");
     f_p_p_p.classList.add(`f_p_p_p`);
-    f_p_p_p.style.backgroundImage=` url('_file_1/f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
+    f_p_p_p.style.backgroundImage=` url('f_a_s${i+1}/s${i+1}_${f_p_num[index][i][j]}.jpg')`;
     
     f_p_p_photo.append(f_p_p_p);
     
