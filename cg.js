@@ -206,7 +206,7 @@ function friend_list_creation(){
   friends_list.append(friend_space);
   }
 }
-friend_list_creation();
+//friend_list_creation();
 
 function slide_show_creation(){
   const slide_show=document.querySelector(" .slide_show");
@@ -256,7 +256,7 @@ function slide_show_creation(){
     }
   },3000)
 }
-slide_show_creation();
+//slide_show_creation();
 
 function info_box_creation(){
   const info_full_space=document.querySelector(" .info_full_space");
@@ -367,7 +367,7 @@ info_space_box_c.append(info_space_box_c_open);
   info_space_box.append(info_space_box_cs_list);
   }
   }
-info_box_creation();
+//info_box_creation();
 const scrollToTop=()=>{
     window.scrollTo({
       top: 0,
@@ -658,7 +658,7 @@ const f_p_search_icon=document.querySelector(".f_p_search_icon");
   })
   
 }
-search_page_transport();
+//search_page_transport();
 
   
 function search_page_creation(){
@@ -722,7 +722,7 @@ function search_page_creation(){
     }
   })
 }
-search_page_creation();
+//search_page_creation();
 
 function login_page_creation(){
   const name="Y29sbGVnZSBnYW5n";
@@ -777,6 +777,10 @@ u_password= btoa(l_p_gang_slide_text_password.value.trim());
         login_page.style.display="none";
         home_page.innerHTML=home_page_content;
         home_page.style.display="flex";
+        friend_list_creation();
+        slide_show_creation();
+        info_box_creation();
+        search_page_transport();
       }
       else{
         login_page_notify.innerText=`"Please enter valid password!"`;
