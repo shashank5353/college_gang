@@ -723,3 +723,76 @@ function search_page_creation(){
   })
 }
 search_page_creation();
+
+function login_page_creation(){
+  const name="Y29sbGVnZSBnYW5n";
+  const password="I2JvbmQtMjAyMw==";
+  const login_page=document.querySelector(".login_page");
+  const home_page=document.querySelector(".home_page");
+  const home_page_content=home_page.innerHTML;
+  home_page.innerHTML="";
+ const l_p_gang_slide_text_name=document.querySelector(".l_p_gang_slide_text_name");
+const l_p_gang_slide_text_password=document.querySelector(".l_p_gang_slide_text_password");
+const l_p_gang_slide_dis_p_eye=document.querySelector(".l_p_gang_slide_dis_p_eye");
+let eye=true;
+l_p_gang_slide_dis_p_eye.addEventListener("click",()=>{
+  
+  if(eye){
+    l_p_gang_slide_dis_p_eye.innerHTML=`
+    <i class="fa-solid fa-eye"></i> `;
+    //console.log("eye@");
+    l_p_gang_slide_text_password.type = "text";
+    eye=false;
+  }
+  else{
+    l_p_gang_slide_dis_p_eye.innerHTML=` <i class="fa-solid fa-eye-slash"></i>`;
+   // console.log("eye #");
+    eye=true;
+    l_p_gang_slide_text_password.type = "password";
+  }
+})
+
+const login_page_notify=document.querySelector(".login_page_notify");
+
+const l_p_submit_btn=document.querySelector(".l_p_submit_btn");
+l_p_submit_btn.addEventListener("click",()=>{
+ u_name= btoa(l_p_gang_slide_text_name.value.toLowerCase().trim());
+u_password= btoa(l_p_gang_slide_text_password.value.trim());
+ const shack=()=>{
+   login_page_notify.style.paddingLeft="5vh";
+   setTimeout(()=>{
+     login_page_notify.style.padding="0vh";
+     login_page_notify.style.paddingRight="5vh";
+     setTimeout(()=>{
+     login_page_notify.style.padding="0vh";
+   },200)
+   },200)
+ }
+ shack();
+ login_page_notify.innerText="";
+ if(u_name){
+  if(u_name==name){
+    if(u_password){
+      if(u_password==password){
+        login_page.style.display="none";
+        home_page.innerHTML=home_page_content;
+        home_page.style.display="flex";
+      }
+      else{
+        login_page_notify.innerText=`"Please enter valid password!"`;
+      }
+    }
+    else{
+      login_page_notify.innerText=`"Please enter password!"`;
+    }
+  }
+  else{
+    login_page_notify.innerText=`"Please enter valid gang name!"`;
+  }
+ }
+ else{
+   login_page_notify.innerText=`"Please enter gang name!"`;
+ }
+})
+}
+login_page_creation();
