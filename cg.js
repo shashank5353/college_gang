@@ -729,8 +729,6 @@ function login_page_creation(){
   const password="I2JvbmQtMjAyMw==";
   const login_page=document.querySelector(".login_page");
   const home_page=document.querySelector(".home_page");
-  const home_page_content=home_page.innerHTML;
-  home_page.innerHTML="";
  const l_p_gang_slide_text_name=document.querySelector(".l_p_gang_slide_text_name");
 const l_p_gang_slide_text_password=document.querySelector(".l_p_gang_slide_text_password");
 const l_p_gang_slide_dis_p_eye=document.querySelector(".l_p_gang_slide_dis_p_eye");
@@ -775,7 +773,6 @@ u_password= btoa(l_p_gang_slide_text_password.value.trim());
     if(u_password){
       if(u_password==password){
         login_page.style.display="none";
-        home_page.innerHTML=home_page_content;
         home_page.style.display="flex";
         friend_list_creation();
         slide_show_creation();
