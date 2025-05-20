@@ -612,7 +612,17 @@ const index=ii;
     
     const f_p_p_dis=document.createElement("div");
     f_p_p_dis.classList.add(`f_p_p_dis`);
-    f_p_p_dis.innerText=`#${f_l[index]} `;
+    let kl="";
+    for(let k=0;k<f_p_num.length;k++){
+      for(let l=0;l<f_p_num[k][i].length;l++){
+     if(f_p_num[k][i][l]==f_p_num[index][i][j]){
+          kl+=`#${f_l[k]} `;
+          
+        }
+      }
+    }
+   // f_p_p_dis.innerText=`#${f_l[index]} `;
+    f_p_p_dis.innerText=`${kl} `;
     f_p_p_dis_space.append(f_p_p_dis);
     
     f_p_p_photo_space.append(f_p_p_dis_space);
