@@ -649,26 +649,33 @@ const search_task_icon=document.querySelector(".search_task_icon");
   search_task_icon.addEventListener("click",()=>{
     home_page.style.display="none";
     search_page.style.display="flex";
+    search_page_creation(0);
   })
 
 const f_p_search_icon=document.querySelector(".f_p_search_icon");
   f_p_search_icon.addEventListener("click",()=>{
     friend_profile_page.style.display="none";
     search_page.style.display="flex";
+    search_page_creation(1);
   })
   
 }
-//search_page_transport();
 
-  
-function search_page_creation(){
+function search_page_creation(ss){
   const search_page=document.querySelector(".search_page");
   const home_page=document.querySelector(".home_page");
-  
+  const friend_profile_page=document.querySelector(".friend_profile_page");
   const s_p_close=document.querySelector(".s_p_close");
   s_p_close.addEventListener("click",()=>{
     search_page.style.display="none";
+    home_page.style.display="none";
+    friend_profile_page.style.display="none";
+    if(ss==0){
     home_page.style.display="flex";
+    }
+    else{
+      friend_profile_page.style.display="flex";
+    }
   })
   const search_text=document.querySelector(".search_text");
   const search_list_space=document.querySelector(".search_list_space");
@@ -722,7 +729,6 @@ function search_page_creation(){
     }
   })
 }
-//search_page_creation();
 
 function login_page_creation(){
   const name="Y29sbGVnZSBnYW5n";
