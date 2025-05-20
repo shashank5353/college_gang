@@ -7,7 +7,7 @@ const f_info=[
   ["04/09/2006","18/08/2006","21/04/2006",
   "30/08/2006","13/07/2006","18/03/2007",
   "29/01/2006","08/07/2006","18/10/2006",
-  "01/01/2005"]
+  "02/05/2005"]
   ,["Shashank's tag","Kumar's tag","Jeevan's tag",
   "Ronith's tag","Srihan's tag","Suhas's tag",
   "Sai kiran's tag","Arjun's tag","Sidhartha's tag",
@@ -23,7 +23,7 @@ const f_info=[
   ,["Shashank@gmail.com","adepukumaraswamy22@gmail.com","Jeevan@gmail.com",
    "ronith4848@gmail.com","sankepallysrihan@gmail.com","suhas123anand@gmail.com",
     "saikiranns63@gmail.com","Arjun@gmail.com","Sidhartha@gmail.com",
-    "Naveen@gmail.com"]
+    "mudhirajnaveenkumar45@gmail.com"]
   ,["Koyyalagudem, Choutuppal.",
     "Koyyalagudem, Choutuppal.",
     "Dilshuknagar, Hydrabad.",
@@ -33,7 +33,7 @@ const f_info=[
     "Karmanghat, LB nagar.",
     "Dilshuknagar, Hydrabad.",
     "Dilshuknagar, Hydrabad.",
-    "Dilshuknagar, Hydrabad."]
+    "Mogalmadka."]
   ,["https://maps.app.goo.gl/fCh9XC5G3Q4j4xv48?g_st=aw",
   "https://maps.app.goo.gl/yXdg28PyGBSjSHbw5?g_st=aw",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
@@ -43,14 +43,14 @@ const f_info=[
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
-  "https://maps.app.goo.gl/pxA7FGsaN2PZSb437"]];
+  "https://maps.app.goo.gl/wqC2BtoXKvH8p7sD9?g_st=aw"]];
 const f_p_num=[
  //shashank
   [[22,30,19,35,17,20,18,16,9,25,41,43],[2,3,4,13,14,16,17,18,22,23,24,25,26,27,28,29], [1,2,3,4,5,6,7,9,10,11],[1,2,3,4,5,6,7,8,9,10,11,12,13,15]],
    //Kumar
   [[37,36,11,12,8],[1,3,5,6,7,8,9,15],[4,5,6,7,11],[2,4,5,6,7,8,9,10,11,12,13,15]],
    //Jeevan
-  [[21,10],[2,6,16,17,21,29],[1,2,3,8],[3,4,5,6,7,8,9,10,11,12,13,14,15]],
+  [[21,10,49],[2,6,16,17,21,29],[1,2,3,8],[3,4,5,6,7,8,9,10,11,12,13,14,15]],
    //Ronith
   [[31,33,32,13,44,45],[1,10,11,12,19,24,26],[1,2,3,8,9,11],[2,4,5,6,7,8,9,10,11,12,13,14,15]],
    //Srihan
