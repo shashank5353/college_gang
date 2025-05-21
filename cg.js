@@ -803,3 +803,8 @@ u_password= btoa(l_p_gang_slide_text_password.value.trim());
 })
 }
 login_page_creation();
+
+setTimeout(()=>{
+  const promo_space=document.querySelector(".promo_space");
+  promo_space.style.display="none";
+},3000)
