@@ -29,6 +29,24 @@ body{
   top: 0;
   z-index: -1;
 }
+.promo_space{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+}
+.promo{
+  width: 100vw;
+  height: 90vh;
+  background-image: url('promo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+background-color: #00000000;
+}
 .main{
   width: 100vw;
   min-height: 0vh;
