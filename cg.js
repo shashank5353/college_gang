@@ -7,11 +7,11 @@ const f_info=[
   ["04/09/2006","18/08/2006","21/04/2006",
   "30/08/2006","13/07/2006","18/03/2007",
   "29/01/2006","08/07/2006","18/10/2006",
-  "02/05/2005"]
-  ,["Shashank's tag","Kumar's tag","Jeevan's tag",
+  "21/05/2005"]
+  ,["Coder","Topper","Jeevan's tag",
   "Ronith's tag","Srihan's tag","Suhas's tag",
   "Sai kiran's tag","Arjun's tag","Sidhartha's tag",
-  "Naveen's tag"]
+  "Nawin"]
   ,["22264-cs-060","22264-cs-012","22264-cs-005",
   "22264-cs-009","22264-cs-025","22264-cs-057",
   "22264-cs-039","22264-cs-055","22264-cs-019",
@@ -20,28 +20,28 @@ const f_info=[
      "+91 9618485563","+91 9121318152","+91 7997828830",
      "+91 8465944439","+91 7893065041","+91 9618634031",
      "+91 9347069436"]
-  ,["Shashank@gmail.com","adepukumaraswamy22@gmail.com","Jeevan@gmail.com",
+  ,["shashanktirandas53@gmail.com","adepukumaraswamy22@gmail.com","gjeevansaisahs@gmail.com",
    "ronith4848@gmail.com","sankepallysrihan@gmail.com","suhas123anand@gmail.com",
-    "saikiranns63@gmail.com","Arjun@gmail.com","Sidhartha@gmail.com",
+    "saikiranns63@gmail.com","marjunsagar43@gmail.com","sidhartha@gmail.com",
     "mudhirajnaveenkumar45@gmail.com"]
   ,["Koyyalagudem, Choutuppal.",
     "Koyyalagudem, Choutuppal.",
-    "Dilshuknagar, Hydrabad.",
+    "sr nagar, Hydrabad.",
     "Ramnagar, Hydrabad.",
     "Mudimyal (Chevella)",
     "Padmarao Nagar, Secunderabad",
     "Karmanghat, LB nagar.",
-    "Dilshuknagar, Hydrabad.",
-    "Dilshuknagar, Hydrabad.",
-    "Mogalmadka."]
+    "Kukatpally, Hydrabad.",
+    "Siddipet, Hydrabad.",
+    "Mogalmadka, Hydrabad."]
   ,["https://maps.app.goo.gl/fCh9XC5G3Q4j4xv48?g_st=aw",
   "https://maps.app.goo.gl/yXdg28PyGBSjSHbw5?g_st=aw",
-  "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
+  "https://maps.app.goo.gl/bes1SwcbKxpeEQN76",
   "https://maps.app.goo.gl/mV7i1PwTWaaR6Vfv5",
   "https://maps.app.goo.gl/mQCrEJMtPkgcfp739",
   "https://maps.app.goo.gl/jkJbgWDiuivWZHaz8?g_st=aw",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
-  "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
+  "https://maps.app.goo.gl/Cr3HHfk1evt8GDtk7",
   "https://maps.app.goo.gl/pxA7FGsaN2PZSb437",
   "https://maps.app.goo.gl/wqC2BtoXKvH8p7sD9?g_st=aw"]];
 const f_p_num=[
